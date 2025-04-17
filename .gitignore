@@ -20,6 +20,10 @@
 *.lol
 *.run.xml
 *.bcf
+*.cls
+*.xdv
+*.xmpdata
+*.xmpi
 
 # Bibliography files (generated)
 *.blx.bib
