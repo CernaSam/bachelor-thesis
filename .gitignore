@@ -1,0 +1,61 @@
+# LaTeX intermediate and output files
+*.aux
+*.bbl
+*.blg
+*.brf
+*.log
+*.nav
+*.out
+*.snm
+*.toc
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+*.synctex(busy)
+*.pdfsync
+*.dvi
+*.ps
+*.lof
+*.lot
+*.lol
+*.run.xml
+*.bcf
+
+# Bibliography files (generated)
+*.blx.bib
+
+# Backup files
+*~
+*.bak
+*.sav
+*.swp
+*.swo
+*.tmp
+*.backup
+*.orig
+
+# Editor-specific
+.vscode/
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Linux
+*~
+.nfs*
+
+# latexmk specific
+latexmkrc
+
+# Output folders (optional, if you use them)
+output/
+build/
