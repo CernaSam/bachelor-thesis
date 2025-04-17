@@ -58,10 +58,15 @@
    </pdfaExtension:schemas> 
   </rdf:Description> 
   <rdf:Description rdf:about="" xmlns:pdf="http://ns.adobe.com/pdf/1.3/"> 
-   <pdf:Producer>pdfTeX</pdf:Producer> 
+   <pdf:Producer>XeTeX</pdf:Producer> 
   </rdf:Description> 
   <rdf:Description rdf:about="" xmlns:dc="http://purl.org/dc/elements/1.1/"> 
    <dc:format>application/pdf</dc:format> 
+   <dc:title><rdf:Alt><rdf:li xml:lang="x-default">Grafit.games - Commercialization of Student Game Projects</rdf:li></rdf:Alt></dc:title>
+   <dc:creator><rdf:Seq><rdf:li>Samuel Černák</rdf:li></rdf:Seq></dc:creator>
+   <dc:rights><rdf:Alt><rdf:li xml:lang="x-default">© 2025 Samuel Černák</rdf:li></rdf:Alt></dc:rights>
+   <dc:description><rdf:Alt><rdf:li xml:lang="x-default">Grafit.games - Commercialization of Student Game Projects (Bachelor's thesis)</rdf:li></rdf:Alt></dc:description>
+   <dc:subject><rdf:Bag><rdf:li>enter, comma, separated, list, of, keywords, in, ENGLISH</rdf:li></rdf:Bag></dc:subject>
   </rdf:Description> 
   <rdf:Description rdf:about="" xmlns:prism="http://prismstandard.org/namespaces/basic/2.2/"> 
   </rdf:Description> 
@@ -73,15 +78,17 @@
   </rdf:Description> 
   <rdf:Description rdf:about="" xmlns:xmp="http://ns.adobe.com/xap/1.0/"> 
    <xmp:CreatorTool>LaTeX with hyperref</xmp:CreatorTool> 
-   <xmp:ModifyDate>2025-04-18T00:23:05+02:00</xmp:ModifyDate> 
-   <xmp:CreateDate>2025-04-18T00:23:05+02:00</xmp:CreateDate> 
-   <xmp:MetadataDate>2025-04-18T00:23:05+02:00</xmp:MetadataDate> 
+   <xmp:ModifyDate>2025-04-18T00:40:39+02:00</xmp:ModifyDate> 
+   <xmp:CreateDate>2025-04-18T00:40:39+02:00</xmp:CreateDate> 
+   <xmp:MetadataDate>2025-04-18T00:40:39+02:00</xmp:MetadataDate> 
   </rdf:Description> 
   <rdf:Description rdf:about="" xmlns:xmpRights = "http://ns.adobe.com/xap/1.0/rights/"> 
+   <xmpRights:Marked>True</xmpRights:Marked>
+   <xmpRights:UsageTerms><rdf:Alt><rdf:li xml:lang="x-default">© 2025 Samuel Černák</rdf:li></rdf:Alt></xmpRights:UsageTerms>
   </rdf:Description> 
   <rdf:Description rdf:about="" xmlns:xmpMM="http://ns.adobe.com/xap/1.0/mm/"> 
    <xmpMM:DocumentID>uuid:96D67445-61F5-E364-BCF7-8EE24D7A47B8</xmpMM:DocumentID> 
-   <xmpMM:InstanceID>uuid:59E11E8D-9E25-91E2-37A6-1074FEEC33F6</xmpMM:InstanceID> 
+   <xmpMM:InstanceID>uuid:20877F58-24F3-242C-5ADA-9CE62EA41E2B</xmpMM:InstanceID> 
   </rdf:Description> 
  </rdf:RDF> 
 </x:xmpmeta> 
