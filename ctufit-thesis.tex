@@ -228,8 +228,20 @@ W3C & World Wide Web Consortium
 % MODIFY ANYTHING BELOW THIS LINE
 %%%%%%%%%%%%%%%%%%%
 
-\include{text/text} % include `text.tex' from `text/' subdirectory
+% Do not forget to include Introduction
+%---------------------------------------------------------------
+% \chapter{Introduction}
+% uncomment the following line to create an unnumbered chapter
+\chapter*{Introduction}\addcontentsline{toc}{chapter}{Introduction}\markboth{Introduction}{Introduction}
+%---------------------------------------------------------------
+\setcounter{page}{1}
+asflkjsafdkljfdsfkdlasjjklfds
 
+%===============================================================
+\include{text/chapters/game-dev-processes}
+
+
+%===============================================================
 \appendix\appendixinit % do not remove these two commands
 
 \include{text/appendix} % include `appendix.tex' from `text/' subdirectory
