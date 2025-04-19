@@ -39,7 +39,7 @@
 % electronic (oneside) or printed (twoside), twoside is default
 % paragraph - if passed, this optional argument sets paragraphs as the deepest level of headers, styles it, numbers it and adds it to Table of Content. Use with care! Normally, it is considered unwise to use it, since its too deep.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\documentclass[english,bachelor,oneside]{ctufit-thesis}
+\documentclass[english,bachelor,oneside]{ctufit-thesis} % WHEN CHANGING ONESIDE-TWOSIDE, ALSO CHANGE CLEARPAGE BEFORE NUMBERED CHAPTERS
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % FILL IN THIS INFORMATION
@@ -192,12 +192,12 @@ Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Curabitur sagittis hen
 % list of other contents: figures, tables, code listings, algorithms, etc.
 % add/remove commands accordingly
 %%%%%%%%%%%%%%%%%%%%%%
-\listoffigures % list of figures
-\begingroup
-\let\clearpage\relax
-\listoftables % list of tables. Remove if you do not have any.
-\thectufitlistingscommand % list of code listings. Remove if you do not have any.
-\endgroup
+% \listoffigures % list of figures
+% \begingroup
+% \let\clearpage\relax
+% \listoftables % list of tables. Remove if you do not have any.
+% \thectufitlistingscommand % list of code listings. Remove if you do not have any.
+% \endgroup
 
 %%%%%%%%%%%%%%%%%%%
 % ABBREVIATIONS
@@ -208,15 +208,10 @@ Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Curabitur sagittis hen
 \chapter{\thectufitabbreviationlabel}
 	
 \begin{tabular}{rl}
-DFA & Deterministic Finite Automaton\\
-FA & Finite Automaton\\
-LPS & Labelled Prüfer Sequence\\
-NFA & Nondeterministic Finite Automaton\\
-NPS & Numbered Prüfer Sequence\\
-XML & Extensible Markup Language\\
-XPath & XML Path Language\\
-XSLT & eXtensible Stylesheet Language Transformations\\
-W3C & World Wide Web Consortium
+CZK     & Czech koruna (Crown)\\
+Dev     & Development\\
+FIT CTU & Faculty of Information Technology at the Czech Technical University (in Prague)\\
+IP      & Intellectual Property
 \end{tabular}
 %%%%%%%%%%%%%%%%%%%
 % ABBREVIATIONS END
@@ -228,28 +223,36 @@ W3C & World Wide Web Consortium
 % MODIFY ANYTHING BELOW THIS LINE
 %%%%%%%%%%%%%%%%%%%
 
-% Do not forget to include Introduction
 %---------------------------------------------------------------
-% \chapter{Introduction}
 % uncomment the following line to create an unnumbered chapter
-\chapter*{Introduction}\addcontentsline{toc}{chapter}{Introduction}\markboth{Introduction}{Introduction}
-%---------------------------------------------------------------
+% \chapter*{Introduction}\addcontentsline{toc}{chapter}{Introduction}\markboth{Introduction}{Introduction}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\include{text/introduction}
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\clearpage % \clearpage if odd-numbered page ins't needed - otherwise \cleardoublepage
+%
 \setcounter{page}{1}
-asflkjsafdkljfdsfkdlasjjklfds
-
-%===============================================================
-\include{text/chapters/game-dev-processes}
-
-
-%===============================================================
+\include{text/chapters/game-dev}
+\include{text/chapters/academic-ventures}
+\include{text/chapters/our-games-&-support}
+\include{text/chapters/support-options}
+\include{text/chapters/foreign-solutions}
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\setcounter{page}{1} % MIGHT NOT BE CORRECT
+\include{text/final-part}
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \appendix\appendixinit % do not remove these two commands
-
+%
 \include{text/appendix} % include `appendix.tex' from `text/' subdirectory
 
 \backmatter % do not remove this command
 
 \printbibliography % print out the BibLaTeX-generated bibliography list
 
+% appendix tree
 \include{text/medium} % include `medium.tex' from `text/' subdirectory
 
 \end{document}
