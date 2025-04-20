@@ -51,12 +51,12 @@
 \ctufitsupervisor{Bc. Ondřej Brém\, MSc.} % replace with name of your supervisor/advisor (include academic degrees)
 \ctufitdepartment{Department of Software Engineering} % replace with the department of your defence
 \ctufityear{2025} % replace with the year of your defence
-\ctufitdeclarationplace{Praze} % replace with the place where you sign the declaration
+\ctufitdeclarationplace{Prague} % replace with the place where you sign the declaration
 \ctufitdeclarationdate{\today} % replace with the date of signature of the declaration
-\ctufitabstractCZE{V této práci zkoumáme, proč jsou studentské herní projekty na naší fakultě po dokončení často opuštěny a navrhujeme podpůrný systém, který podporuje jejich další rozvoj a možnou komercializaci. Přestože v Praze roste soukromé investování, studentské podnikání zůstává na nízké úrovni. Na naší fakultě chybí mechanismus, který by komercializaci her systematicky podporoval. Zaměřujeme se na proces vývoje her, existující podporu v jiných prostředích a možné modely komercializace. Na základě této analýzy jsme navrhli systém s družstvem, přizpůsobený potřebám studentů. V rámci práce jsme spustili náborový web, získali více než tucet kontaktů od zájemců o zapojení, vytvořili stanovy družstva a připravili testovací mechanismus. Přestože nebyla založena žádná právnická osoba, práce pokládá základy pro udržitelnou podpůrnou strukturu, která může studenty motivovat a podpořit při využití podnikatelského potenciálu jejich kreativních projektů.}
-\ctufitabstractENG{In the thesis we explore why student-created games at our faculty are often abandoned after completion. We design a support system that encourages further development and potential commercialization of these projects. Although private investment is rising in Prague, student entrepreneurship remains low. Our faculty lacks a mechanism to support game commercialization. We examine the game development process, existing institutional support elsewhere, and possible commercialization models, ultimately proposing a lightweight cooperative-based system tailored to students’ needs. As part of the thesis, we launched a recruitment website, collected over a dozen contacts from interested participants, created association rules, and prepared a testing mechanism. While no legal entity was established, this thesis lays the groundwork for a sustainable support structure that can empower students to pursue the entrepreneurial potential of their creative projects.}
+\ctufitabstractCZE{V této práci zkoumáme, proč jsou studentské herní projekty na naší fakultě po dokončení často opuštěny a navrhujeme podpůrný systém, který podporuje jejich další rozvoj a možnou komercializaci. Přestože v Praze roste soukromé investování, studentské podnikání zůstává na nízké úrovni. Na naší fakultě chybí mechanismus, který by komercializaci her systematicky podporoval. Zaměřujeme se na proces vývoje her, existující podporu v jiných prostředích a~možné modely komercializace. Na základě této analýzy jsme navrhli systém s družstvem, přizpůsobený potřebám studentů. V rámci práce jsme spustili náborový web, získali více než tucet kontaktů od zájemců o zapojení, vytvořili stanovy družstva a připravili testovací mechanismus. Přestože nebyla založena žádná právnická osoba, práce pokládá základy pro udržitelnou podpůrnou strukturu, která může studenty motivovat a podpořit při využití podnikatelského potenciálu jejich kreativních projektů.}
+\ctufitabstractENG{In the thesis we explore why student-created games at our faculty are often abandoned after completion. We design a support system that encourages further development and potential commercialization of these projects. Although private investment is rising in Prague, student entrepreneurship remains low. Our faculty lacks a mechanism to support game commercialization. We examine the game development process, existing institutional support elsewhere, and possible commercialization models, ultimately proposing a lightweight cooperative-based system tailored to students’ needs. As part of the thesis, we launched a recruitment website, collected over a dozen contacts from interested participants, developed association rules, and prepared a testing mechanism. While no legal entity was established, this thesis lays the groundwork for a sustainable support structure that can empower students to pursue the entrepreneurial potential of their creative projects.}
 \ctufitkeywordsCZE{hra, vývoj her, uvedení hry na trh, podpora studentů, vedené studenty, start-up, duševní vlastnictví, univerzitní inkubátor}
-\ctufitkeywordsENG{game, game development, game launch, student support, studend led, start-up, intellectual property, university incubator}
+\ctufitkeywordsENG{game, game development, game launch, student support, studend-led, start-up, intellectual property, university incubator}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % END FILL IN
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -65,6 +65,12 @@
 % CUSTOMIZATION of this template
 % Skip this part or alter it if you know what you are doing.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Remove paragraph indentation
+\setlength{\parindent}{0pt}
+% Add vertical space between paragraphs
+\setlength{\parskip}{0.5em plus 0.1em minus 0.1em}
+
 
 \RequirePackage{iftex}[2020/03/06]
 \iftutex % XeLaTeX and LuaLaTeX
@@ -131,7 +137,7 @@
 % This is a place to thank people for helping you. It is common to thank your supervisor.
 %%%%%%%%%%%%%%%%%%%
 \begin{acknowledgmentpage}
-	Chtěl bych poděkovat především sit amet, consectetuer adipiscing elit. Curabitur sagittis hendrerit ante. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos hymenaeos. Cras pede libero, dapibus nec, pretium sit amet, tempor quis. Sed vel lectus. Donec odio tempus molestie, porttitor ut, iaculis quis, sem. Suspendisse sagittis ultrices augue.
+	% Chtěl bych poděkovat především sit amet, consectetuer adipiscing elit. Curabitur sagittis hendrerit ante. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos hymenaeos. Cras pede libero, dapibus nec, pretium sit amet, tempor quis. Sed vel lectus. Donec odio tempus molestie, porttitor ut, iaculis quis, sem. Suspendisse sagittis ultrices augue.
 \end{acknowledgmentpage} 
 %%%%%%%%%%%%%%%%%%%
 % ACKNOWLEDGMENT END
@@ -146,13 +152,13 @@
 % ENG: choose one of approved texts of the declaration. DO NOT CREATE YOUR OWN. Find the approved texts at https://courses.fit.cvut.cz/SFE/download/index.html#_documents (document Declaration for FT in English)
 % CZE/SLO: Vyberte jedno z fakultou schvalenych prohlaseni. NEVKLADEJTE VLASTNI TEXT. Schvalena prohlaseni najdete zde: https://courses.fit.cvut.cz/SZZ/dokumenty/index.html#_dokumenty (prohlášení do ZP)
 \begin{declarationpage}
-FILL IN ACCORDING TO THE INSTRUCTIONS. VYPLŇTE V SOULADU S POKYNY. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Curabitur sagittis hendrerit ante. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos hymenaeos. Cras pede libero, dapibus nec, pretium sit amet, tempor quis. Sed vel lectus. Donec odio tempus molestie, porttitor ut, iaculis quis, sem. Suspendisse sagittis ultrices augue. Donec ipsum massa, ullamcorper in, auctor et, scelerisque sed, est. In sem justo, commodo ut, suscipit at, pharetra vitae, orci. Pellentesque pretium lectus id turpis.
+% FILL IN ACCORDING TO THE INSTRUCTIONS. VYPLŇTE V SOULADU S POKYNY. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Curabitur sagittis hendrerit ante. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos hymenaeos. Cras pede libero, dapibus nec, pretium sit amet, tempor quis. Sed vel lectus. Donec odio tempus molestie, porttitor ut, iaculis quis, sem. Suspendisse sagittis ultrices augue. Donec ipsum massa, ullamcorper in, auctor et, scelerisque sed, est. In sem justo, commodo ut, suscipit at, pharetra vitae, orci. Pellentesque pretium lectus id turpis.
 
-Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Curabitur sagittis hendrerit ante. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos hymenaeos. Cras pede libero, dapibus nec, pretium sit amet, tempor quis. Sed vel lectus. Donec odio tempus molestie, porttitor ut, iaculis quis, sem. Suspendisse sagittis ultrices augue. Donec ipsum massa, ullamcorper in, auctor et, scelerisque sed, est. In sem justo, commodo ut, suscipit at, pharetra vitae, orci. Pellentesque pretium lectus id turpis.
+% Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Curabitur sagittis hendrerit ante. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos hymenaeos. Cras pede libero, dapibus nec, pretium sit amet, tempor quis. Sed vel lectus. Donec odio tempus molestie, porttitor ut, iaculis quis, sem. Suspendisse sagittis ultrices augue. Donec ipsum massa, ullamcorper in, auctor et, scelerisque sed, est. In sem justo, commodo ut, suscipit at, pharetra vitae, orci. Pellentesque pretium lectus id turpis.
 \end{declarationpage}
 %%%%%%%%%%%%%%%%%%%
 % DECLARATION END
-%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \printabstractpage % do not remove this command
 
@@ -215,8 +221,8 @@ EULA    & End-User License Agreement\\
 FIT CTU & Faculty of Information Technology at the Czech Technical University (in Prague)\\
 GDPR    & General Data Protection Regulation\\
 IP      & Intellectual Property\\
-UI      & User Interface\\
 USA     & United States of America\\
+UI      & User Interface\\
 \end{tabular}
 %%%%%%%%%%%%%%%%%%%
 % ABBREVIATIONS END
@@ -239,10 +245,10 @@ USA     & United States of America\\
 %
 \setcounter{page}{1}
 \include{text/chapters/game-dev}
-\include{text/chapters/academic-ventures}
-\include{text/chapters/our-games-&-support}
-\include{text/chapters/support-options}
-\include{text/chapters/foreign-solutions}
+% \include{text/chapters/academic-ventures}
+% \include{text/chapters/our-games-&-support}
+% \include{text/chapters/support-options}
+% \include{text/chapters/foreign-solutions}
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \setcounter{page}{1} % MIGHT NOT BE CORRECT
@@ -251,13 +257,13 @@ USA     & United States of America\\
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \appendix\appendixinit % do not remove these two commands
 %
-\include{text/appendix} % include `appendix.tex' from `text/' subdirectory
+% \include{text/appendix} % include `appendix.tex' from `text/' subdirectory
 
 \backmatter % do not remove this command
 
 \printbibliography % print out the BibLaTeX-generated bibliography list
 
 % appendix tree
-\include{text/medium} % include `medium.tex' from `text/' subdirectory
+% \include{text/medium} % include `medium.tex' from `text/' subdirectory
 
 \end{document}
