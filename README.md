@@ -1,3 +1,15 @@
+# Required Packages
+- texlive (likely)
+- biber (likely)
+
+# Recommended Setup:
+- VS Code
+- LaTeX Workshop
+
+# Commands
+"latexmk -c"
+"latexmk -C"
+
 ## VS CODE CONFIG
 ### Setup:
 - Ctrl/Cmd + Shift + P
