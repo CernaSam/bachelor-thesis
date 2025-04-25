@@ -65,12 +65,9 @@
 % CUSTOMIZATION of this template
 % Skip this part or alter it if you know what you are doing.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-% Remove paragraph indentation
-\setlength{\parindent}{0pt}
-% Add vertical space between paragraphs
-\setlength{\parskip}{0.5em plus 0.1em minus 0.1em}
-
+\setlength{\parindent}{0pt}                        % Remove paragraph indentation
+\setlength{\parskip}{0.5em plus 0.1em minus 0.1em}  % Add vertical space between paragraphs
+\setlength{\belowcaptionskip}{6pt}
 
 \RequirePackage{iftex}[2020/03/06]
 \iftutex % XeLaTeX and LuaLaTeX
@@ -113,6 +110,8 @@
 \usepackage{listings} % typesetting of sources
 %\usepackage{minted}
 \usepackage{csquotes}
+\usepackage{float}
+\graphicspath{{images/}}
 
 %%%%%%%%%%%%%%%%%%%%%%
 % PACKAGES SETTINGS END
@@ -137,7 +136,7 @@
 % This is a place to thank people for helping you. It is common to thank your supervisor.
 %%%%%%%%%%%%%%%%%%%
 \begin{acknowledgmentpage}
-	% Chtěl bych poděkovat především sit amet, consectetuer adipiscing elit. Curabitur sagittis hendrerit ante. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos hymenaeos. Cras pede libero, dapibus nec, pretium sit amet, tempor quis. Sed vel lectus. Donec odio tempus molestie, porttitor ut, iaculis quis, sem. Suspendisse sagittis ultrices augue.
+	Chtěl bych poděkovat především sit amet, consectetuer adipiscing elit. Curabitur sagittis hendrerit ante. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos hymenaeos. Cras pede libero, dapibus nec, pretium sit amet, tempor quis. Sed vel lectus. Donec odio tempus molestie, porttitor ut, iaculis quis, sem. Suspendisse sagittis ultrices augue.
 \end{acknowledgmentpage} 
 %%%%%%%%%%%%%%%%%%%
 % ACKNOWLEDGMENT END
@@ -152,9 +151,9 @@
 % ENG: choose one of approved texts of the declaration. DO NOT CREATE YOUR OWN. Find the approved texts at https://courses.fit.cvut.cz/SFE/download/index.html#_documents (document Declaration for FT in English)
 % CZE/SLO: Vyberte jedno z fakultou schvalenych prohlaseni. NEVKLADEJTE VLASTNI TEXT. Schvalena prohlaseni najdete zde: https://courses.fit.cvut.cz/SZZ/dokumenty/index.html#_dokumenty (prohlášení do ZP)
 \begin{declarationpage}
-% FILL IN ACCORDING TO THE INSTRUCTIONS. VYPLŇTE V SOULADU S POKYNY. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Curabitur sagittis hendrerit ante. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos hymenaeos. Cras pede libero, dapibus nec, pretium sit amet, tempor quis. Sed vel lectus. Donec odio tempus molestie, porttitor ut, iaculis quis, sem. Suspendisse sagittis ultrices augue. Donec ipsum massa, ullamcorper in, auctor et, scelerisque sed, est. In sem justo, commodo ut, suscipit at, pharetra vitae, orci. Pellentesque pretium lectus id turpis.
+FILL IN ACCORDING TO THE INSTRUCTIONS. VYPLŇTE V SOULADU S POKYNY. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Curabitur sagittis hendrerit ante. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos hymenaeos. Cras pede libero, dapibus nec, pretium sit amet, tempor quis. Sed vel lectus. Donec odio tempus molestie, porttitor ut, iaculis quis, sem. Suspendisse sagittis ultrices augue. Donec ipsum massa, ullamcorper in, auctor et, scelerisque sed, est. In sem justo, commodo ut, suscipit at, pharetra vitae, orci. Pellentesque pretium lectus id turpis.
 
-% Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Curabitur sagittis hendrerit ante. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos hymenaeos. Cras pede libero, dapibus nec, pretium sit amet, tempor quis. Sed vel lectus. Donec odio tempus molestie, porttitor ut, iaculis quis, sem. Suspendisse sagittis ultrices augue. Donec ipsum massa, ullamcorper in, auctor et, scelerisque sed, est. In sem justo, commodo ut, suscipit at, pharetra vitae, orci. Pellentesque pretium lectus id turpis.
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Curabitur sagittis hendrerit ante. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos hymenaeos. Cras pede libero, dapibus nec, pretium sit amet, tempor quis. Sed vel lectus. Donec odio tempus molestie, porttitor ut, iaculis quis, sem. Suspendisse sagittis ultrices augue. Donec ipsum massa, ullamcorper in, auctor et, scelerisque sed, est. In sem justo, commodo ut, suscipit at, pharetra vitae, orci. Pellentesque pretium lectus id turpis.
 \end{declarationpage}
 %%%%%%%%%%%%%%%%%%%
 % DECLARATION END
@@ -169,25 +168,8 @@
 % (appropriate to remove in most theses)
 %%%%%%%%%%%%%%%%%%%
 % \begin{summarypage}
-% \section*{Summary section}
-% 
-% \lipsum[1][1-8]
-% 
-% \section*{Summary section}
-% 
-% \lipsum[2][1-6]
-% 
-% \section*{Summary section}
-% 
-% \lipsum[3]
-% 
-% \section*{Summary section}
-% 
-% \lipsum[2]
-% 
-% \section*{Summary section}
-% 
-% \lipsum[1][1-8] Lorem lorem lorem.
+%
+%
 % \end{summarypage}
 %%%%%%%%%%%%%%%%%%%
 % SUMMARY END
@@ -242,13 +224,13 @@ UI      & User Interface\\
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \clearpage % \clearpage if odd-numbered page ins't needed - otherwise \cleardoublepage
-%
 \setcounter{page}{1}
+%
 \include{text/chapters/game-dev}
-% \include{text/chapters/academic-ventures}
-% \include{text/chapters/our-games-&-support}
-% \include{text/chapters/support-options}
-% \include{text/chapters/foreign-solutions}
+\include{text/chapters/academic-ventures}
+\include{text/chapters/our-games-&-support}
+\include{text/chapters/incubators}
+\include{text/chapters/support-options}
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \setcounter{page}{1} % MIGHT NOT BE CORRECT
@@ -257,13 +239,13 @@ UI      & User Interface\\
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \appendix\appendixinit % do not remove these two commands
 %
-% \include{text/appendix} % include `appendix.tex' from `text/' subdirectory
+\include{text/appendix} % include `appendix.tex' from `text/' subdirectory
 
 \backmatter % do not remove this command
 
 \printbibliography % print out the BibLaTeX-generated bibliography list
 
 % appendix tree
-% \include{text/medium} % include `medium.tex' from `text/' subdirectory
+\include{text/medium} % include `medium.tex' from `text/' subdirectory
 
 \end{document}
