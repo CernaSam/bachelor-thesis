@@ -2,13 +2,13 @@
 - texlive (likely)
 - biber (likely)
 
-# Recommended Setup:
-- VS Code
-- LaTeX Workshop
-
 # Commands
 "latexmk -c"
 "latexmk -C"
+
+# Recommended Setup:
+- VS Code
+- LaTeX Workshop
 
 ## VS CODE CONFIG
 ### Setup:
