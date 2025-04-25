@@ -2,8 +2,9 @@
 ### Setup:
 - Ctrl/Cmd + Shift + P
 - enter "Open User Settings (JSON)
+- paste config contents and save file
 - restart VS Code
-### Config:
+### Contents:
 {
   "latex-workshop.latex.recipe.default": "latexmk (xelatex)",
   "latex-workshop.latex.recipes": [
