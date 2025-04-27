@@ -531,6 +531,8 @@
 \numberwithin{theorem}{chapter}
 % theorems, proofs, definitions, etc. end
 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% CUSTOMIZED
 \DeclareRobustCommand{\printabstractpage}{%
 \begin{abstractpage}
 \if\@ctufitlang E{%
@@ -539,35 +541,37 @@
 \end{abstract}
 
 \vskip 0.5cm
+{\noindent\color{heading}\bfseries Keywords\hspace{1em}}{\thectufitkeywords}
 
-{\noindent\color{heading}\bfseries Keywords\hspace{1em}}{\thectufitkeywords}}\else{%
+\clearpage % <<< use clearpage here!
+
 \begin{abstrakt}%
 \thectufitabstrakt
 \end{abstrakt}
 
 \vskip 0.5cm
+{\noindent\color{heading}\bfseries Klíčová slova\hspace{1em}}{\thectufitklicovaslova}
 
-{\noindent\color{heading}\bfseries Klíčová slova\hspace{1em}}{\thectufitklicovaslova}}\fi
-
-\vskip 1cm
-
-\if\@ctufitlang E{%
+}\else{%
 \begin{abstrakt}%
 \thectufitabstrakt
 \end{abstrakt}
 
 \vskip 0.5cm
+{\noindent\color{heading}\bfseries Klíčová slova\hspace{1em}}{\thectufitklicovaslova}
 
-{\noindent\color{heading}\bfseries Klíčová slova\hspace{1em}}{\thectufitklicovaslova}}\else{
+\clearpage % <<< use clearpage here!
+
 \begin{abstract}%
 \thectufitabstract
 \end{abstract}
 
 \vskip 0.5cm
-
-{\noindent\color{heading}\bfseries Keywords\hspace{1em}}{\thectufitkeywords}}\fi
+{\noindent\color{heading}\bfseries Keywords\hspace{1em}}{\thectufitkeywords}
+}\fi
 \end{abstractpage}
 }
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% CUSTOMIZED
 
 \newenvironment{chapterabstract}{\hfill\begin{minipage}{\dimexpr\textwidth-0.5cm}\itshape}{\end{minipage}\vskip 0.5cm\par\@afterindentfalse\@afterheading}
 
