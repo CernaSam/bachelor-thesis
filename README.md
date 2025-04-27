@@ -1,5 +1,3 @@
-- Dirctories that probably need to be created: ./build ./build/text
-
 # Required Packages
 - texlive (likely)
 - biber (likely)
@@ -11,6 +9,7 @@
 # Recommended Setup:
 - VS Code
 - LaTeX Workshop
+- Dirctories that probably need to be created: ./build ./build/text
 
 ## VS CODE CONFIG
 ### Setup:
