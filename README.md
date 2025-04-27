@@ -9,11 +9,10 @@
 # Recommended Setup:
 - VS Code
 - LaTeX Workshop
+- Dirctories that probably need to be created: ./build ./build/text
 
 ## VS CODE CONFIG
 ### Setup:
-- (dirctories that probably need to be created) ./build ./build/text
-
 - Ctrl/Cmd + Shift + P
 - enter "Open User Settings (JSON)
 - paste config contents and save file
