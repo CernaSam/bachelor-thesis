@@ -12,6 +12,8 @@
 
 ## VS CODE CONFIG
 ### Setup:
+- (dirctories that probably need to be created) ./build ./build/text
+
 - Ctrl/Cmd + Shift + P
 - enter "Open User Settings (JSON)
 - paste config contents and save file
@@ -19,23 +21,5 @@
 ### Contents:
 {
   "latex-workshop.latex.recipe.default": "latexmk (xelatex)",
-  "latex-workshop.latex.recipes": [
-    {
-      "name": "latexmk (xelatex)",
-      "tools": ["latexmk-xelatex"]
-    }
-  ],
-  "latex-workshop.latex.tools": [
-    {
-      "name": "latexmk-xelatex",
-      "command": "latexmk",
-      "args": [
-        "-xelatex",
-        "-synctex=1",
-        "-interaction=nonstopmode",
-        "-file-line-error",
-        "%DOC%"
-      ]
-    }
-  ]
+  "latex-workshop.latex.outDir": "./build",
 }
