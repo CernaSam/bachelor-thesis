@@ -119,6 +119,13 @@
 	\definecolor{backgroundgray}{RGB}{199, 219, 241} %CTU light blue
 	\definecolor{headgray}{rgb}{0.50,0.50,0.51}
 	\definecolor{enumgray}{RGB}{0, 122, 195} %CTU blue
+
+	% \definecolor{decoration}{RGB}{129, 63, 152} %CTU blue
+	% \definecolor{heading}{RGB}{129, 63, 152} %CTU blue
+	% \definecolor{headbackgroundgray}{RGB}{255, 209, 102} %light blue
+	% \definecolor{backgroundgray}{RGB}{255, 209, 102} %light blue
+	% \definecolor{headgray}{rgb}{0.50,0.50,0.51}
+	% \definecolor{enumgray}{RGB}{129, 63, 152} %CTU blue
 \fi
 % colours end
 
