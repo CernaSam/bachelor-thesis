@@ -578,6 +578,9 @@
 }\fi
 \end{abstractpage}
 }
+
+
+\newcommand{\czquote}[1]{„#1“}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% CUSTOMIZED
 
 \newenvironment{chapterabstract}{\hfill\begin{minipage}{\dimexpr\textwidth-0.5cm}\itshape}{\end{minipage}\vskip 0.5cm\par\@afterindentfalse\@afterheading}
