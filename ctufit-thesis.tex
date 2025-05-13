@@ -52,7 +52,7 @@
 \ctufitdepartment{Department of Software Engineering} % replace with the department of your defence
 \ctufityear{2025} % replace with the year of your defence
 \ctufitdeclarationplace{Prague} % replace with the place where you sign the declaration
-\ctufitdeclarationdate{\today} % replace with the date of signature of the declaration
+\ctufitdeclarationdate{May 13, 2025} % replace with the date of signature of the declaration
 \ctufitabstractCZE{V této práci zkoumáme, proč jsou studentské herní projekty na naší fakultě po dokončení často opuštěny a navrhujeme podpůrný systém, který podporuje jejich další rozvoj a možnou komercializaci. Přestože v Praze roste soukromé investování, studentské podnikání zůstává na nízké úrovni. Na naší fakultě chybí mechanismus, který by komercializaci her systematicky podporoval. Zaměřujeme se na proces vývoje her, existující podporu v jiných prostředích a~možné modely komercializace. Na základě této analýzy jsme navrhli systém s družstvem, přizpůsobený potřebám studentů. V rámci práce jsme spustili náborový web, získali více než tucet kontaktů od zájemců o zapojení, vytvořili stanovy družstva a připravili testovací mechanismus. Přestože nebyla založena žádná právnická osoba, práce pokládá základy pro udržitelnou podpůrnou strukturu, která může studenty motivovat a podpořit při využití podnikatelského potenciálu jejich kreativních projektů.}
 \ctufitabstractENG{In the thesis we explore why student-created games at our faculty are often abandoned after completion. We design a support system that encourages further development and potential commercialization of these projects. Although private investment is rising in Prague, student entrepreneurship remains low. Our faculty lacks a mechanism to support game commercialization. We examine the game development process, existing institutional support elsewhere, and possible commercialization models, ultimately proposing a lightweight cooperative-based system tailored to students’ needs. As part of the thesis, we launched a recruitment website, collected over a dozen contacts from interested participants, developed association rules, and prepared a testing mechanism. While no legal entity was established, this thesis lays the groundwork for a sustainable support structure that can empower students to pursue the entrepreneurial potential of their creative projects.}
 \ctufitkeywordsCZE{hra, vývoj her, uvedení hry na trh, podpora studentů, vedené studenty, start-up, duševní vlastnictví, univerzitní inkubátor}
@@ -112,6 +112,7 @@
 \usepackage{csquotes}
 \usepackage{float}
 \graphicspath{{images/}}
+% \graphicspath{{appeded/posters/}}
 \usepackage{xr-hyper}
 \usepackage{enumitem}
 
@@ -138,12 +139,11 @@
 % This is a place to thank people for helping you. It is common to thank your supervisor.
 %%%%%%%%%%%%%%%%%%%
 \begin{acknowledgmentpage}
-	Chtěl bych poděkovat především sit amet, consectetuer adipiscing elit. Curabitur sagittis hendrerit ante. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos hymenaeos. Cras pede libero, dapibus nec, pretium sit amet, tempor quis. Sed vel lectus. Donec odio tempus molestie, porttitor ut, iaculis quis, sem. Suspendisse sagittis ultrices augue.
-    %   Ondra Brem
-    %   Honza Matousek
-    %   Alica Seidlova
-    %   Nina Kubenova
-    %   Radek Richtr
+    I would like to express my sincere gratitude to Bc.~Ondřej Brém,~MSc., my thesis supervisor, for his dedication, guidance, feedback, and the considerable time and effort he devoted to this work. His expertise, patience, and willingness to discuss and challenge ideas were instrumental in shaping this thesis.
+    I am also deeply thankful to Ing.~Jan~Matoušek, whose vision and support were invaluable in clarifying key decisions.
+    Special thanks to Alica Seidlová for her editorial input, and to Nina Kubenová for helping me understand the~underlying regulation relevant to the project.
+    I am grateful to Mgr. Dominik Vítek for his encouragement, and to Ing. Radek Richtr, Ph.D., for generously providing thewebsite template and design language.
+    Their support has been vital in bringing this thesis to~life.
 \end{acknowledgmentpage} 
 %%%%%%%%%%%%%%%%%%%
 % ACKNOWLEDGMENT END
@@ -158,9 +158,9 @@
 % ENG: choose one of approved texts of the declaration. DO NOT CREATE YOUR OWN. Find the approved texts at https://courses.fit.cvut.cz/SFE/download/index.html#_documents (document Declaration for FT in English)
 % CZE/SLO: Vyberte jedno z fakultou schvalenych prohlaseni. NEVKLADEJTE VLASTNI TEXT. Schvalena prohlaseni najdete zde: https://courses.fit.cvut.cz/SZZ/dokumenty/index.html#_dokumenty (prohlášení do ZP)
 \begin{declarationpage}
-FILL IN ACCORDING TO THE INSTRUCTIONS. VYPLŇTE V SOULADU S POKYNY. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Curabitur sagittis hendrerit ante. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos hymenaeos. Cras pede libero, dapibus nec, pretium sit amet, tempor quis. Sed vel lectus. Donec odio tempus molestie, porttitor ut, iaculis quis, sem. Suspendisse sagittis ultrices augue. Donec ipsum massa, ullamcorper in, auctor et, scelerisque sed, est. In sem justo, commodo ut, suscipit at, pharetra vitae, orci. Pellentesque pretium lectus id turpis.
+I hereby declare that the presented thesis is my own work and that I have cited all sources of information in accordance with the Guideline for adhering to ethical principles when elaborating an academic final thesis.
 
-Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Curabitur sagittis hendrerit ante. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos hymenaeos. Cras pede libero, dapibus nec, pretium sit amet, tempor quis. Sed vel lectus. Donec odio tempus molestie, porttitor ut, iaculis quis, sem. Suspendisse sagittis ultrices augue. Donec ipsum massa, ullamcorper in, auctor et, scelerisque sed, est. In sem justo, commodo ut, suscipit at, pharetra vitae, orci. Pellentesque pretium lectus id turpis.
+I acknowledge that my thesis is subject to the rights and obligations stipulated by the Act No.~121/2000 Coll., the Copyright Act, as amended. In accordance with Section 2373(2) of Act No.~89/2012 Coll., the Civil Code, as amended, I hereby grant a non-exclusive authorization (licence) to utilize this thesis, including all computer programs that are part of it or attached to it and all documentation thereof (hereinafter collectively referred to as the "Work"), to any and all persons who wish to use the Work. Such persons are entitled to use the Work in any manner that does not diminish the value of the Work and for any purpose (including use for profit). This authorisation is unlimited in time, territory and quantity.
 \end{declarationpage}
 %%%%%%%%%%%%%%%%%%%
 % DECLARATION END
