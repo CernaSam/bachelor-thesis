@@ -1,0 +1,192 @@
+\externaldocument[nocite]{build/text/chapters/game-dev}[url=text/chapters/game-dev]
+\externaldocument[nocite]{build/text/chapters/incubators}[url=text/chapters/incubators]
+\externaldocument[nocite]{build/text/chapters/legal}[url=text/chapters/legal]
+%===============================================================
+\chapter{Designing an Incubation Programme}
+%===============================================================
+
+\begin{chapterabstract}
+    A SWOT analysis of a typical student-developed game made it clear that while students operate in a supportive environment and the indie market offers opportunities, internal weaknesses (such as limited time, experience, and legal knowledge) and external threats (legal mishaps and financial uncertainty) pose substantial barriers. This chapter presents the structure of the Grafit.games incubation programme, designed specifically for student game developers. It outlines a six-stage game development path and groups it into four support phases. Each phase provides frameworks, educational content, mentorship checkpoints, and—where possible—infrastructure or partnerships to help teams advance toward launch and beyond.
+\end{chapterabstract}
+
+During the research I encountered a wide range of institutional support systems for game developers, including broad innovation incubators, pre-incubators, and dedicated game incubators. While these models offer valuable services—mentorship, workspace, networking, business development and more—their target audience often consists of aspiring founders at an earlier stage in their journey.
+
+In contrast, the student-made projects at FIT CTU tend to be further along in development, often already boasting functional prototypes, strong technical execution, or unique design ideas. They, however, lack the will and entrepreneurial direction needed to turn them into commercial products.
+
+This gap highlights the need for a support structure tailored specifically to the needs of the FIT game creators—Grafit.games. Launching a game is a multidisciplinary challenge. Most students, despite their technical talent, are not equipped with the knowledge or resources to manage these diverse responsibilities alone. The goal is to provide lightweight, accessible, and practical assistance that allows students to gain real-world experience in entrepreneurship while maximizing the potential of their academic work.
+
+%---------------------------------------------------------------
+\section{Analysis of Student Needs}
+To effectively support student developers, it is essential to understand their needs, motivations, and the obstacles they face. I used the SWOT analysis method—a strategic planning tool commonly used in business and project development. SWOT stands for Strengths, Weaknesses, Opportunities, and Threats. It helps identify internal advantages and limitations (strengths and weaknesses) as well as external factors that could be taken advantage of or present risks (opportunities and threats)\cite{investopedia-swot}. I applied this method to a representative student game project:
+
+\begin{table}[H]
+    \begin{tabular}{|p{0.015\textwidth}|p{0.44\textwidth}|p{0.44\textwidth}|}
+        \hline
+        & helpful & harmful \\
+        \hline
+        \begin{minipage}[t]{0.015\textwidth}
+            \vspace{1em}
+            \rotatebox{90}{internal}
+        \end{minipage} &
+        \begin{minipage}[t]{0.42\textwidth}
+            \vspace{0pt}
+            \begin{itemize}[itemsep=2pt, parsep=0pt]
+                \item \textbf{original, innovative ideas:} fresh concepts not bound by industry trends 
+                \item \textbf{collaboration opportunities:} easy access to interdisciplinary collaboration
+                \item \textbf{academic support:} access to guidance and feedback from professors, mentors, and peers
+                \item \textbf{learning environment:} room to experiment and iterate without commercial pressures
+                \item \textbf{low financial pressure:} since labour costs are avoided
+            \end{itemize}
+        \end{minipage} &
+        \begin{minipage}[t]{0.42\textwidth}
+            \vspace{0pt}
+            \begin{itemize}[itemsep=2pt, parsep=0pt]
+                \item \textbf{time constraints:} caused by academic workload and deadlines
+                \item \textbf{incomplete features:} projects might be incomplete because of the scope and timeline of academic work
+                \item \textbf{limited experience:} in project management, game marketing, or polishing a final product
+                \item \textbf{technical debt:} code written quickly or without best practices may be hard to maintain or scale
+                \item \textbf{resource constraints:} limited access to funding, professional tools, and assets
+            \end{itemize}
+            \vspace{1pt}
+        \end{minipage} \\
+    \hline
+    \end{tabular}
+    \caption{SWOT analysis of a student-developed game}
+\end{table}
+\begin{table}[H]
+    \begin{tabular}{|p{0.015\textwidth}|p{0.44\textwidth}|p{0.44\textwidth}|}        
+        \hline
+        \begin{minipage}[t]{0.015\textwidth}
+            \vspace{1em}
+            \rotatebox{90}{external}
+        \end{minipage} &
+        \begin{minipage}[t]{0.42\textwidth}
+            \vspace{0pt}
+            \begin{itemize}[itemsep=2pt, parsep=0pt]
+                \item \textbf{competitions and grants:} prime position to participate in game festivals, competitions, indie showcases, and apply for seed funding
+                \item \textbf{community feedback:} opportunity to get real user feedback in the (academic) community
+                \item \textbf{portfolio building:} students can create standout projects for their professional portfolios
+            \end{itemize}
+        \end{minipage} &
+        \begin{minipage}[t]{0.42\textwidth}
+            \vspace{0pt}
+            \begin{itemize}[itemsep=2pt, parsep=0pt]
+                \item \textbf{oversaturation:} it is difficult to gain visibility in a crowded indie game market
+                \item \textbf{difficulty estimating returns:} for unknown studios committing resources is risky
+                \item \textbf{intellectual property issues:} risk of disputes if IP isn’t handled properly
+                \item \textbf{legal issues:} risks related to the correct legal setup of the commercial undertaking
+                \item \textbf{balancing academics:} risk related to compromised academic performance
+            \end{itemize}
+            \vspace{1pt}
+        \end{minipage} \\
+        \hline
+    \end{tabular}
+    \caption{SWOT analysis of a student-developed game}
+  \end{table}
+
+To conclude the analysis:
+\begin{itemize}
+    \item \textbf{Strengths} are related to the fact that the indie market is known for its undiscriminating opportunities even for very small, unknown and inexperienced developers. Fresh, well-executed ideas are a good predictor of success in the field. Additionally, students are set in an educational environment with an abundance of support and don’t face the commercial pressures of game studios.
+    \item \textbf{Weaknesses} are associated with the limited time, experience, and resources starting developers command. 
+    \item \textbf{Opportunities} are tied to the special position of the developer teams in academic environments.
+    \item \textbf{Threats} correspond to the unpredictability of profits in such a fiercely competitive field and to the threat of punitive ramifications caused by a lack of legal foresight. Both of these factors make committing resources risky.
+\end{itemize}
+The SWOT analysis suggests that conventional early-stage student-developed games face significant internal weaknesses and major external threats. The Grafit.games support programme should therefore aim to minimize both internal and external risks.
+
+%---------------------------------------------------------------
+\section{Stages of Student Project in the Programme}\label{sec:programme-stages}
+The incubation process takes games approaching launch—as described in chapter \ref{chap:game-dev}---through 6 stages of development coinciding with section \ref{sec:launch-in-detail}:
+\paragraph{\large Stage 1: Game Development \& Structural Readiness}
+\begin{itemize}
+    \item \textbf{Core Gameplay:} Polishing mechanics, assets, and UI/UX.
+    \item \textbf{Server \& Infrastructure Setup:} Stress testing online features, ensuring scalability.
+    \item \textbf{Rigorous Testing:} Alpha \& beta testing to catch bugs and balance gameplay.
+    \item \textbf{Data \& Privacy Foundations:} Preparing infrastructure for personal data collection to ensure GDPR/CCPA compliance.
+    \item \textbf{Platform Compliance:} Meeting technical standards for platforms (Steam, mobile, consoles, etc.).
+\end{itemize}
+\paragraph{\large Stage 2: Legal \& IP Safeguards}
+\begin{itemize}
+    \item \textbf{Protecting IP:} Securing copyrights, trademarks, and licences for all assets.
+    \item \textbf{Clarifying Ownership:} Drafting contributor agreements and handling third-party content legally.
+    \item \textbf{Drafting EULA \& Privacy Policy:} Defining player rights, responsibilities, and data usage terms.
+    \item \textbf{Checking Platform Regulations:} Confirming requirements like age ratings and content policies.
+\end{itemize}
+\paragraph{\large Stage 3: Financial Planning \& Monetization}
+\begin{itemize}
+    \item \textbf{Creating a Budget:} Planning for development, marketing, and post-launch support.
+    \item \textbf{Choosing a Monetization Model:} Premium, freemium, or subscription.
+    \item \textbf{Company Structure:} Considering forming a legal entity to ensure liability protection and facilitate partnerships.
+    \item \textbf{Securing Funding (Optional):} If necessary self-funding, crowdfunding, or working with investors/publishers.
+\end{itemize}
+\paragraph{\large Stage 4: Marketing \& Audience Building}
+\begin{itemize}
+    \item \textbf{Researching the Target Audience:} Understanding preferences and trends.
+    \item \textbf{Creating a Press Kit:} Preparing trailers, screenshots, descriptions.
+    \item \textbf{Building Online Presence:} Engaging through social media, dev blogs, and community forums.
+    \item \textbf{Partnering with Promoters:} Collaborating with streamers/content creators.
+    \item \textbf{Choosing Distribution Platforms:} Balancing visibility (e.g., Steam) with creative control (e.g., Itch.io).
+\end{itemize}
+\paragraph{\large Stage 5: Operational Planning}
+\begin{itemize}
+    \item \textbf{Launch Timeline:} Defining clear milestones and realistic deadlines.
+    \item \textbf{Team Roles \& Readiness:} Assigning responsibilities across devs, marketing, and support.
+    \item \textbf{Pre-Launch Coordination:} Aligning communication, community management, and support resources.
+    \item \textbf{Contingency Planning:} Preparing for unexpected launch issues.
+\end{itemize}
+\paragraph{\large Stage 6: Launch \& Post-Launch Operations}
+\begin{itemize}
+    \item \textbf{Publication:} Officially publishing the game and providing launch-day support.
+    \item \textbf{Post-Release Updates:} Gathering feedback from the community and making necessary adjustments.
+    \item \textbf{Development Continuation (Optional):} Extending the game through updates or DLCs.
+\end{itemize}
+
+%---------------------------------------------------------------
+\section{Phases of Support Provided by the Programme}
+To ensure that promising projects have the potential to succeed beyond the classroom, Grafit.games supplies structured support in 4 phases. The design and features of the programme are inspired by chapter \ref{chap:incubators}.
+
+In each phase, the programme:
+\begin{itemize}
+    \item proposes a framework students can follow at their own pace,
+    \item provides education on a topic (in the form of prepared materials, video tutorials, or seminars),
+    \item supplies mentorship and consultation on passing a checkpoint in the stages from section \ref{sec:programme-stages}.
+\end{itemize}
+Once a team passes a checkpoint, they move on to the next stage in the process and are provided perks of the next phase. In the future, the programme aims to:
+\begin{itemize}
+    \item provide supplementary infrastructure without markup (e.g., meeting rooms, server infrastructure),
+    \item partner with professionals in the related fields, to provide services and expert consulting (e.g., legal, business).
+\end{itemize}
+
+The framework, education, and a checkpoint are highlighted in bold and infrastructure and partnerships (aspiration for the future) in italic:
+\paragraph{\large Phase 1: From Student Project to Proof of Concept}
+\begin{itemize}
+    \item \textbf{Framework:} BAD, a tool made of 41 cards and a manual that helps design a project with business-related aspects in mind. Made for both entrepreneurs and designers, it helps keep track of aspects from users and solutions to positioning in the market and the way a project generates value.
+    \item \textbf{Production }Practices Education: Seminar on turning a prototype into a refined product, conducting structured alpha/beta tests and gathering user feedback.
+    \item \textbf{Checkpoint:} Assistance and verification that the game meets requirements from Stage~1.
+    \item \textit{Infrastructure:} Co-working space, meeting rooms, testing infrastructure.
+    \item \textit{Partnerships:} Networking and fundraising events, connections to investors.
+\end{itemize}
+\paragraph{\large Phase 2: From Proof of Concept to Business-Readiness}
+\begin{itemize}
+    \item \textbf{Framework:} The options to be incorporated into the Grafit.games legal entity---described in chapter \ref{chap:legal}---navigating the administrative processes and handling taxation in the students’ stead.
+    \item \textbf{Early-Development IP Education:} Checklist explaining intellectual property rights, licensing, and ownership of assets (especially when using third-party materials or working in teams) devised from subsection \ref{subsec:legal-requirements}.
+    \item \textbf{Business Education:} Seminar introducing developers to basic entrepreneurial concepts including budgeting, market research, and risk analysis.
+    \item \textbf{Checkpoint:} Assistance and verification that the game meets requirements from Stages~2~\&~3.
+    \item \textit{Infrastructure:} Grants or micro-investments.
+    \item \textit{Partnerships:} Legal advisors and business professionals.
+\end{itemize}
+\paragraph{\large Phase 3: From Business-Readiness to Market Launch}
+\begin{itemize}
+    \item \textbf{Framework:} The MVP-Based Product Launch framework for first-time developers---focused on launching early, gathering feedback, iterating and subsequently releasing a full version. Larger projects willing to invest resources and work with the community will be referred to The Pre-Launch Hype Strategy framework.
+    \item \textbf{Marketing Education:} Video tutorials on press kit preparation, social media management, building websites, and selecting platforms like Steam or Itch.io.
+    \item \textbf{Launch Practices Education:} List detailing operational planning practices commonly used in big studios when publishing a game.
+    \item \textbf{Checkpoint:} Assistance and verification that the game meets requirements from Stages~4~\&~5.
+    \item \textit{Infrastructure:} Access to development tools and server infrastructure (especially for multiplayer games).
+    \item \textit{Partnerships:} Connections to promoters and publishers.
+\end{itemize}
+\paragraph{\large Phase 4: From Market Launch to Sustainable Business}
+\begin{itemize}
+    \item \textbf{Framework:} Customer Success Framework---focusing on building customer relationships and driving sustainable growth, it provides a roadmap that demystifies this complex domain (for teams willing to continue the development of their game).
+    \item \textbf{Post-Launch Support and Development Education:} Seminar on providing player support, responding to feedback effectively, and understanding when to release updates, expand with DLCs, or plan sequels.
+    \item \textbf{Checkpoint:} Assistance and verification that the game meets requirements from Stages~6.
+    \item \textit{Partnerships:} Business mentors focusing on long-term strategy, scaling operations, reinvesting revenue, and seeking investment.
+\end{itemize}
