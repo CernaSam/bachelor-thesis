@@ -39,7 +39,7 @@
 % electronic (oneside) or printed (twoside), twoside is default
 % paragraph - if passed, this optional argument sets paragraphs as the deepest level of headers, styles it, numbers it and adds it to Table of Content. Use with care! Normally, it is considered unwise to use it, since its too deep.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\documentclass[english,bachelor,oneside]{ctufit-thesis} % WHEN CHANGING ONESIDE-TWOSIDE, ALSO CHANGE CLEARPAGE BEFORE NUMBERED CHAPTERS
+\documentclass[english,bachelor,twoside]{ctufit-thesis} % WHEN CHANGING ONESIDE-TWOSIDE, ALSO CHANGE CLEARPAGE BEFORE NUMBERED CHAPTERS
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % FILL IN THIS INFORMATION
@@ -86,7 +86,7 @@
 }
 
 % uncomment the following to hide all hyperlinks
-%\hypersetup{hidelinks}
+\hypersetup{hidelinks}
 
 % uncomment the following to change the colour of all hyperlinks to CTU blue
 %\hypersetup{allbordercolors=decoration}
@@ -157,6 +157,7 @@
 % INSTRUCTIONS
 % ENG: choose one of approved texts of the declaration. DO NOT CREATE YOUR OWN. Find the approved texts at https://courses.fit.cvut.cz/SFE/download/index.html#_documents (document Declaration for FT in English)
 % CZE/SLO: Vyberte jedno z fakultou schvalenych prohlaseni. NEVKLADEJTE VLASTNI TEXT. Schvalena prohlaseni najdete zde: https://courses.fit.cvut.cz/SZZ/dokumenty/index.html#_dokumenty (prohlášení do ZP)
+\cleardoublepage
 \begin{declarationpage}
 I hereby declare that the presented thesis is my own work and that I have cited all sources of~information in accordance with the Guideline for adhering to ethical principles when elaborating an academic final thesis. 
 In the course of~writing, I have used AI-assisted tools—such as language models—for support with stylistic editing, grammar refinement, and clarity improvements. All conceptual, analytical, and structural elements of the thesis remain my own.
@@ -246,7 +247,7 @@ UX      & User Experience\\
 \include{text/introduction}
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\clearpage % \clearpage if odd-numbered page ins't needed - otherwise \cleardoublepage
+\cleardoublepage % \clearpage if odd-numbered page ins't needed - otherwise \cleardoublepage
 \setcounter{page}{1}
 %
 \include{text/chapters/academic-ventures}
